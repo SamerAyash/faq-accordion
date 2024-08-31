@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | FAQ accordion</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 12px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <img src="./assets/images/background-pattern-desktop.svg" class="background-pattern-desktop" alt="background-pattern-desktop">
+    <img src="./assets/images/background-pattern-mobile.svg" class="background-pattern-mobile" alt="background-pattern-mobile">
+    <section class="faqs-card">
+      <h1 class="header"><img src="./assets/images/icon-star.svg" alt="icon-star"> FAQs</h1>
+      <ul class="faqs-list">
+        <li class="faq" id="faq-1">
+          <div class="faq-header" onclick="toggleFaq(this)" data-faq="1" data-status="open">
+            <h2>What is Forntend Mentor, and how will it help me?</h2>
+            <div class="icon">
+              <img id="icon-plus" class="hidden" src="./assets/images/icon-plus.svg" alt="icon-plus">
+              <img id="icon-minus" class="block"src="./assets/images/icon-minus.svg" alt="icon-minus">
+            </div>
+          </div>
+          <p class="desc block">
+            Frontend Mentor offers realistic coding challanges to help developers improve their frontend coding skills 
+            with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building.
+          </p>
+        </li>
+
+        <li class="faq" id="faq-2">
+          <div class="faq-header" onclick="toggleFaq(this)" data-faq="2" data-status="close">
+            <h2>Is Frontend Mentor free?</h2>
+            <div class="icon">
+              <img id="icon-plus" class="block"src="./assets/images/icon-plus.svg" alt="icon-plus">
+              <img id="icon-minus" class="hidden" src="./assets/images/icon-minus.svg" alt="icon-minus">
+            </div>
+          </div>
+          <p class="desc hidden">
+            Frontend Mentor offers realistic coding challanges to help developers improve their frontend coding skills 
+            with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building.
+          </p>
+        </li>
+
+        <li class="faq" id="faq-3">
+          <div class="faq-header" onclick="toggleFaq(this)" data-faq="3" data-status="close">
+            <h2>Can I use Frontend Mentor projects in my portfolio?</h2>
+            <div class="icon">
+              <img id="icon-plus" class="block"src="./assets/images/icon-plus.svg" alt="icon-plus">
+              <img id="icon-minus" class="hidden" src="./assets/images/icon-minus.svg" alt="icon-minus">
+            </div>
+          </div>
+          <p class="desc hidden">
+            Frontend Mentor offers realistic coding challanges to help developers improve their frontend coding skills 
+            with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building.
+          </p>
+        </li>
+
+        <li class="faq" id="faq-4">
+          <div class="faq-header" onclick="toggleFaq(this)" data-faq="4"  data-status="close">
+            <h2>How can I get help if I'm stuck on a challenge?</h2>
+            <div class="icon">
+              <img id="icon-plus" class="block"src="./assets/images/icon-plus.svg" alt="icon-plus">
+              <img id="icon-minus" class="hidden" src="./assets/images/icon-minus.svg" alt="icon-minus">
+            </div>
+          </div>
+          <p class="desc hidden">
+            Frontend Mentor offers realistic coding challanges to help developers improve their frontend coding skills 
+            with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building.
+          </p>
+        </li>
+      </ul>
+    </section>
+  </main>  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/samer-ayash">Samer Ayash</a>.
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>

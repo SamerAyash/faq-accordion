@@ -1,0 +1,99 @@
+@font-face {
+    font-family: "WorkSans";
+    src: url("./assets/fonts/WorkSans-VariableFont_wght.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+:root{
+    --white: hsl(0, 0%, 100%);
+    --light-pink: hsl(275, 100%, 97%);
+    --grayish-purple: hsl(292, 16%, 49%);
+    --dark-purple: hsl(292, 42%, 14%);
+}
+.attribution{
+    background: var(--light-pink);
+}
+body{
+    font-size: 16px;
+    font-family: 'WorkSans', Times, serif;
+}
+.background-pattern-desktop{
+    display: block;
+    width: 100%;
+}
+.background-pattern-mobile{
+    display: none;
+}
+.block{
+    display: block;
+}
+.hidden{
+    display: none;
+}
+main{
+    background-color: var(--light-pink);
+    min-height: 100vh;
+}
+
+main .faqs-card{
+    width: 600px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--white);
+    padding: 40px;
+    margin-top: 110px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px 5px #9b9b9b61;
+}
+main .faqs-card .header{
+    font-size: 50px;
+    gap: 20px;
+    display: inline-flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+main .faqs-card .faqs-list{
+    list-style: none;
+}
+main .faqs-list .faq{
+    padding: 20px 0;
+    border-bottom: 1px solid #dddddd;
+}
+main .faqs-list .faq:last-child{
+    padding-bottom: 0;
+    border-bottom: none;
+}
+main .faqs-card .faqs-list .faq .faq-header{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    cursor: pointer;
+}
+main .faq .faq-header h2{
+    font-size: 18px;
+}
+main .faq .desc{
+    margin-top: 20px;
+    opacity: 0.7;
+    font-size: 16px;
+}
+@media(max-width: 766px) {
+    .background-pattern-desktop{
+        display: none;
+    }
+    .background-pattern-mobile{
+        display: block;
+        width: 100%;
+    }
+    main .faqs-card {
+        width: 90%;
+        margin-top: 150px;
+    }
+}
